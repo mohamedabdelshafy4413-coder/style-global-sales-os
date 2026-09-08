@@ -1,19 +1,40 @@
-# 📄 Document question answering template
+# STYLE Global Sales OS
 
-A simple Streamlit app that answers questions about an uploaded document via OpenAI's GPT-3.5.
+Arabic-first Streamlit application for international B2B export sales of Style for Marble & Granite.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://document-question-answering-template.streamlit.app/)
+## Core modules
+- Executive Command Center
+- Top 10 Markets
+- Golden 5
+- Country Intelligence
+- Golden Accounts
+- 72-Hour Opportunities
+- Sales Pipeline
+- RFQ Manager
+- Country-specific Email Campaign Builder
+- Brevo & Deliverability
+- CSV / Excel Import & Export
 
-### How to run it on your own machine
+## Run locally
+```bash
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# macOS/Linux
+source .venv/bin/activate
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-1. Install the requirements
+## Deploy to Streamlit Community Cloud
+1. Open Streamlit Community Cloud.
+2. Select repository `style-global-sales-os`.
+3. Branch: `main`.
+4. Main file: `app.py`.
+5. Preferred slug: `style-global-sales-os`.
+6. Deploy.
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+## Data caution
+Seeded markets/accounts are DEMO strategic model data. Replace with verified trade, buyer, customs, freight, RFQ and sales data before commercial reliance.
 
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+Never hardcode API keys. Use Streamlit Secrets for Brevo or future integrations.
