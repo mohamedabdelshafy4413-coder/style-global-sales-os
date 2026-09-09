@@ -28,3 +28,24 @@ ACCOUNT_WEIGHTS = {
     "financial_strength": 7,
     "buying_signal": 5,
 }
+
+# Default product set for the Buyer Intelligence module.
+# These can be changed later in the UI without changing the scoring model.
+STYLE_MATERIALS = [
+    "Galala Light",
+    "Sunny Light",
+    "Meli Brown",
+    "Meli Grey",
+    "Zafarana Flower",
+]
+
+BUYER_INTELLIGENCE_WEIGHTS = {
+    "import_signal": 25,
+    "buyer_scale": 20,
+    "material_fit": 15,
+    "repeat_potential": 10,
+    "project_signal": 10,
+    "contact_quality": 8,
+    "decision_access": 5,
+    "source_confidence": 7,
+}
